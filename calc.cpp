@@ -20,6 +20,8 @@ void Calc::calculate(void) {
     if (buttonVal == "C") {
         this->_fl = 0;
         newVal = "0";
+        _num1 = 0;
+        _num2 = 0;
     } else if (buttonVal == "+" ||
                buttonVal == "-" ||
                buttonVal == "*" ||
