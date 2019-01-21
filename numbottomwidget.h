@@ -7,8 +7,7 @@ namespace Ui {
 class NumBottomWidget;
 }
 
-class NumBottomWidget : public QWidget
-{
+class NumBottomWidget : public QWidget {
     Q_OBJECT
 
 public:

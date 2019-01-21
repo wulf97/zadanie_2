@@ -17,9 +17,9 @@ QWidget *Manager::getWidgets(void) {
     QString buttonName;
 
     /* Компановка виджета */
-    QVBoxLayout *combLayout = new QVBoxLayout(this); // Главный лэйаут для компановки виджета
-    QHBoxLayout *hLayout = new QHBoxLayout(this);
-    QVBoxLayout *numLayout = new QVBoxLayout(this);
+    QVBoxLayout *combLayout = new QVBoxLayout(); // Главный лэйаут для компановки виджета
+    QHBoxLayout *hLayout = new QHBoxLayout();
+    QVBoxLayout *numLayout = new QVBoxLayout();
 
     QWidget *combWidget = new QWidget(this); // Виджет, в котором происходит компановка других виджетов
 

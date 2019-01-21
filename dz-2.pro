@@ -3,7 +3,6 @@
 # Project created by QtCreator 2019-01-10T15:58:26
 #
 #-------------------------------------------------
-
 include(setup.pri)
 
 QT       += core gui
@@ -24,6 +23,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+CONFIG += c++11
+
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
@@ -31,7 +32,9 @@ SOURCES += \
     operationswidget.cpp \
     numtopwidget.cpp \
     numbottomwidget.cpp \
-    equwidget.cpp
+    equwidget.cpp \
+    manager.cpp \
+    calc.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -39,7 +42,9 @@ HEADERS += \
     operationswidget.h \
     numtopwidget.h \
     numbottomwidget.h \
-    equwidget.h
+    equwidget.h \
+    manager.h \
+    calc.h
 
 FORMS += \
     mainwindow.ui \

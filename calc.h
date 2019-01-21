@@ -1,17 +1,17 @@
 #ifndef CALC_H
 #define CALC_H
 
-#include <QWidget>
+#include <QObject>
 #include <QPushButton>
 #include <QString>
 #include <QLineEdit>
 #include <QDebug>
 
-class Calc : public QWidget {
+class Calc : public QObject {
     Q_OBJECT
 
 public:
-    explicit Calc(QWidget *parent = nullptr);
+    explicit Calc(QObject *parent = nullptr);
     ~Calc();
 
     void setDispaly(QLineEdit*);
@@ -19,7 +19,7 @@ public:
 private slots:
     void calculate(void);
 private:
-    QLineEdit *_display = 0;
+    QLineEdit *_display = nullptr;
     bool _fl = 0;
     float _num1 = 0;
     float _num2 = 0;
